@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div>
+            <div class="input-box">
+                <label for="grid-size">Grid Size:</label>
+                <input type="number" id="grid-size" min="2" max="15">
+            </div>
+            <div class="input-box">
+                <label for="difficulty">Difficulty:</label>
+                <input type="number" id="difficulty" min="1" max="5">
+            </div>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+
+        <div class="game-grid" id="game-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

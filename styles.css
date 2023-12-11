@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.input-box {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+button {
+    margin-bottom: 0.5em;
+}
+
+.game-container {
+    text-align: center;
+    padding: 1em;
+}
+
+.game-grid {
+    display: grid;
+    gap: 0.5em;
+    width: max-content;
+    margin: 0 auto;
+    overflow: auto;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.card {
+    width: 2em;
+    height: 2em;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card.active {
+    background-color: #ffcc00; /* Change color for active card */
+}
+
+.card.clicked {
+    background-color: #66ff66; /* Change color for clicked card */
+}
+
+.card.wrong {
+    background-color: #ff3333; /* Flash red for wrong card */
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .game-container {
+        padding: 10px;
+    }
+
+    .game-grid {
+        width: 100%;
+    }
+}
